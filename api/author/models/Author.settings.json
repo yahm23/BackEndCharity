@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "authors",
+  "info": {
+    "name": "author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "blogs": {
+      "collection": "blog",
+      "via": "authors"
+    }
+  }
+}
