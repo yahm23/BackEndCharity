@@ -2,14 +2,14 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-bookshelf",
+      "connector": "strapi-mongoose",
       "settings": {
-        "client": "sqlite",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "client": "mongo",
+        "host": "greencluster-shard-00-00-hrdca.mongodb.net:27017",
+        "port": "5045",
+        "database": "charity",
+        "username": "admin",
+        "password": "test354"
       },
       "options": {}
     }
